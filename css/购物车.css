@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img {
+    vertical-align: middle;
+    width:60px;
+}
+.test{
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    
+}
+.outer9 .inter1{
+    margin: 0 auto;
+    width: 1120px;
+    height: 94px;
+
+}
+.outer9 .inter1 h1{
+    font-weight: normal;
+    padding-top: 40px;
+}
+.test .inter2{
+    width: 1120px;
+    height: 492px;
+    /*background-color: #795da3;*/
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.test .inter21{
+    width: 1118px;
+    height: 54px;
+    line-height:54px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #666666;
+    border: 0.5px solid #cccccc;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    
+}
+.test .inter2 .checkAll{
+    margin-left: 25px;
+    width: 16px;
+    height: 16px;
+}
+.test .inter2 .check{
+    margin-left: 25px;
+    width: 16px;
+    height: 16px;
+}
+.test .s1{
+    margin-left: 10px;
+}
+.test .inter2 .inter21 .s2{
+    margin-left: 40px;
+}
+.test .inter2 .inter21 .s3{
+     margin-left: 500px;
+}
+.test .inter2 .inter21 .count{
+    margin-left: 75px;
+}
+.test .inter2 .inter21 .total{
+    margin-left: 95px;
+}
+.test .inter2 .money1{
+    margin-left: 90px;
+}
+.test .inter2 .inter21 .del{
+    margin-left: 90px;
+}
+.test .inter2 .inter22{
+    width: 1118px;
+    height: 326px;
+    line-height: 100px;
+    font-size: 12px;
+    color: #666666;
+    /*display: none;*/
+}
+.test .inter2 .inter22 img{
+    width: 66px;
+    height: 66px;
+    margin-left: 10px;
+}
+.test .inter2 .inter22 ul li{
+    width: 1118px;
+    height: 101px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    list-style: none;
+    border: 0.5px solid #cccccc;
+}
+.test .inter2 .inter22 .money{
+    margin-left: 435px;
+}
+.test .inter2 .inter22 .sub{
+    margin-left: 70px;
+}
+.test .inter2 .inter22 .add{
+    margin-left: 5px;
+}
+.test .inter2 .del{
+    margin-left: 80px;
+}
+.test .inter3{
+    width: 1118px;
+    height: 90px;
+    margin: 0 auto 50px;
+    background-color: #ffffff;
+    border: 0.5px solid #cccccc;
+    font-size: 12px;
+    color: #666666;
+    /*display: none;*/
+}
+.test .inter3 .inter31{
+    width: 1058px;
+    height: 48px;
+    line-height: 48px;
+    margin: 20px auto;
+}
+.test .inter3 .ss1{
+    margin-left: 40px;
+}
+.test .inter3 .ss2{
+    margin-left: 40px;
+}
+.test .inter3 .foot{
+    display: inline-block;
+    float: right;
+    width: 280px;
+    height: 59px;
+    line-height: 20px;
+    /*background-color:red;*/
+}
+.test .inter3 .foot .totalCount{
+    color: #f44;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 4px;
+    line-height: 20px;
+}
+.test .inter3 .foot .totalPrice{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 6px;
+    color: #f44;
+    line-height: 18px;
+}
+.test .inter3 .foot .ss3{
+    float: right;
+    padding: 0 60px;
+}
+.test .inter3 .foot .ss4{
+    color: #666;
+    font-size: 16px;
+
+}
+.test .inter3 .last{
+    float: right;
+    background-color: #FF5151;
+    width: 194px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.test .inter3 .last a{
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff;
+}
+.test .inter3 .checkAll{
+    width: 16px;
+    height: 16px;
+}
+
+.test .inter23{
+    width: 1118px;
+    height: 524px;
+    border: 0.5px solid #cccccc;
+    text-align: center;
+    display: none;
+}
+.test .inter23 .picture{
+    width: 1118px;
+    height: 250px;
+    /*background-color: yellow;*/
+    text-align: center;
+}
+.test .inter23 .picture img{
+    width: 150px;
+    height: 120px;
+    margin: 110px;
+}
+.test .inter23 p{
+    color: #999;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.test .inter23 a{
+    background: #c78a49;
+    padding: 0 20px;
+    height: 26px;
+    line-height: 24px;
+    margin: 0 auto;
+}
+.test .inter21 span{
+    font-size: 12px;
+    color: #000000;text-align: center;
+    margin:58px;
+    font-size:16px;
+}
+
+.test .checkPro{
+    width: 1118px;
+    height: 54px;
+    line-height:54px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #666666;
+    border: 0.5px solid #cccccc;
+    margin-bottom: 10px;
+}

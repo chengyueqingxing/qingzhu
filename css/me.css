@@ -1,0 +1,152 @@
+.w{
+	width: 1140px;
+	height: 400px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	
+}
+
+.w .sub {
+	background: #cacaca;
+	width: 190px;
+    float: left;
+}
+
+
+.w .main{
+	width: 900px;
+	float:left;
+	position:relative;
+	display: block;
+	padding: 20px 0;
+	height: 243px;
+	background: #8d8d8d;
+	margin-left: 10px;
+}
+
+.w .other{
+	width: 900px;
+	float:left;
+	display: block;
+	background: #8d8d8d;
+	margin: 10px 10px;
+}
+
+.w .sub .boxx{
+	width: 150px;
+	padding: 30px 20px;
+
+}
+	
+.w .sub .boxx .box1{
+	width: 150px;
+	float: left;
+	margin-right: 67px;
+	line-height: 30px;
+}
+	
+.w .sub .boxx .box2{
+	width: 150px;
+	float: left;
+	margin-right: 67px;
+	line-height: 30px;
+
+}
+
+.w .sub .boxx .box3{
+	width: 150px;
+	float: left;
+	margin-right: 67px;
+	line-height: 30px;
+
+}
+
+.w .sub .boxx .box{
+	width: 150px;
+	float: left;
+	margin-right: 67px;
+	line-height: 30px;
+
+}
+
+.w .main .boox{
+	width: 250px;
+    height: 243px;
+	float: left;
+	margin-left: 67px;
+	margin-right: 7px;
+	line-height: 30px;
+}
+
+img {
+    border: 0;
+	vertical-align: middle;
+	width: 78px;
+    height: 78px;
+}
+	
+li {
+    display: list-item;
+	text-align: -webkit-match-parent;
+	float: left;
+}
+
+.w .main .boox1{
+	width: 530px;
+	float: left;
+	padding: 0 20px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+
+.w .main .boox1 .boox2{
+	width: 150px;
+	float: right;
+	padding: 0 10px;
+    height: 40px;
+}
+
+.w .main .boox3{
+	width: 530px;
+	float: left;
+	padding: 10px 20px;
+    height: 200px;
+}
+
+.w .main .boox3 .ppp1{
+	float: left;
+	padding: 50px 20px 40px 30px;
+	line-height: 30px;
+}
+
+.w .other .boox1{
+	width: 840px;
+	float: left;
+	padding: 5px 25px;
+	height: 30px;
+	margin: 5px 10px 3px 10px;
+}
+
+
+.w .other .boox2{
+	width: 250px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 7px;
+	line-height: 30px;
+	padding:10px ;
+}
+
+.w .other .boox1 .boox3{
+	width: 150px;
+	float: right;
+	padding: 0 10px;
+    height: 40px;
+}
+
+.w .other .ppp2{
+	float: right;
+	margin-right: 17px;
+	margin-top: 17px;
+}

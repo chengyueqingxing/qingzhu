@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/青竹0.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/购物车.css">
+    <link rel="stylesheet" href="css/青竹6.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<style type="text/css">
+	table{width: 1200px;}
+		table th{width: 100px}
+		table td{width: 200px;text-align: center;}
+		a{text-decoration:none;color: black}
+		span{font-size: 20px;margin: 10px 10px}
+		strong{border: 1px solid;}
+	.checkPro{
+		background-color: gray;
+	}
+	.leftConent {
+		float: left;
+	}
+	.rightConent{
+		float: right;
+	}
+	</style>
+	<script src="vue.js"></script>
+
+<body>
+    <div class="header">
+		<div class="header_c inner_c">
+			<h1 class="logo">
+				青竹商城
+			</h1>
+			<dl class = "allType">
+				<dt><a href="#">查看所有类型</a></dt>
+				<dd>
+					<div class = "dd_inn">
+						<ul class = "dd_cont">
+							<li><a href="#">不锈钢</a></li>
+							<li><a href="#">原料水泥</a></li>
+							<li><a href="#">塑料</a></li>
+							<li><a href="#">木质</a></li>
+							<li><a href="#">陶瓷</a></li>
+						</ul>
+						<ul class="pro">
+							<li>
+								<a href="#">
+									<div class="pic">
+										<img src="images/img25.png" alt="">
+									</div>
+									<div class="content">
+										<h3>简约木质餐盘</h3>
+										<span>￥200</span>
+									</div>
+								</a>
+								<div class="mask">
+									<a href="#" class = "btn">查看详情</a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<div class="pic">
+										<img src="images/img26.png" alt="">
+									</div>
+									<div class="content">
+										<h3>简约木质餐盘</h3>
+										<span>￥200</span>
+									</div>
+								</a>
+								<div class="mask">
+									<a href="#" class = "btn">查看详情</a>
+								</div>
+							</li>
+							<li>
+								<a href="#">
+									<div class="pic">
+										<img src="images/img27.png" alt="">
+									</div>
+									<div class="content">
+										<h3>简约木质餐盘</h3>
+										<span>￥200</span>
+									</div>
+								</a>
+								<div class="mask">
+									<a href="#" class = "btn">查看详情</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</dd>
+			</dl>
+			<ul class="nav">
+				<li><a href="a青竹总界面.html">首页</a></li>
+				<li><a href="allproducts.html">所有产品</a></li>
+				<li><a href="me.html">个人主页</a></li>
+			</ul>
+			<div class="reg">
+				<div class="ico">
+					<span class = "ico_c"></span>
+					<div class="settle">
+						<p class="con">3件商品 共计：<span>￥1310</span></p>
+						<a href="购物车.html" class="btn">结算</a>
+					</div>
+					<span class = "con">
+						3
+					</span>
+				</div>
+				<div class = "reg_c">
+					<a href="land.html" id="">登陆</a>
+					<span>&nbsp;|&nbsp;</span>
+					<a href="registe.html">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+		
+	
+    <div class="outer9" id="app" v-cloak>
+        <script src="vue.js"></script>
+        <div class="inter1">
+            <h1>购物车</h1>
+        </div>
+        <div class="inter2">
+            <!--
+            <div class="inter22">
+             
+                <table>
+                    <tr v-for="(thing, index) in things" :key="thing.id">
+                        <td>{{ thing.id }}</td>
+                        <td>{{ thing.title }}</td>
+                        <td>{{ thing.price }}</td>
+                        <td>	<button v-bind:disabled="thing.count === 0" 
+                            v-on:click="thing.count-=1">-</button>
+                             {{ thing.count }}
+                         <button v-on:click="thing.count+=1">+</button></td>
+                         <td>
+                            {{ itemPrice(thing.price, thing.count) }}
+                        </td>
+                        <td>
+                            <button @click="deleteItem(index)">删除</button>
+                        </td>
+                    </tr>
+                </table>  
+
+            </div>
+            <div class="inter23">
+                <div class="picture">
+                    <img src="images/购物车.png" alt="">
+                </div>
+                <p>您的购物车还没有商品，快去挑选心爱的商品吧！</p>
+                <a href=""><span>去逛逛</span></a>
+            </div>
+        </div>
+        <div class="inter3">
+            <div class="inter31">
+                <div class="last">
+                    <a href="./青竹登录.html">确认结算</a>
+                </div>
+                <input type="checkbox" class="checkAll"><span class="s1">全选</span>
+                <span class="ss1">删除</span><span class="ss2">清除下架商品</span>
+                <div class="foot">
+                    已选<span class="totalCount">0</span>件
+                    合计(不含运费) : <span>总价：￥{{ totalPrice }}</span>元<br>
+                    <span class="ss3">已优惠 : <span class="ss4"> ¥0</span></span>
+                </div>
+            </div>
+		</div>
+		<script src="vue.js"></script>
+		<script>
+			var app = new Vue({
+			  el: '#app',
+			  data: {
+			    books: [
+			    	{
+				      id: 1,
+				      title: '经典系列红色时钟',
+				      price:580,
+				      count: 1
+				    },
+	          {
+	            id: 2,
+	            title: '便携简约清扫扫帚',
+	            price: 580,
+	            count: 1
+	          },
+	          {
+	            id: 3,
+	            title: ' 黑色陶瓷研磨器皿 ',
+	            price: 150,
+	            count: 1
+	          }
+	        ]
+			  },
+			  methods: {
+			  	itemPrice(price, count){
+			  		return price * count;
+			  	},
+			  	deleteItem(index){
+			  		this.thing.splice(index, 1);
+			  	}
+			  	
+			  },
+			  computed: {
+			    totalPrice(){
+			      var total = 0;
+			      for (let thing of this.things) {
+			        total += thing.price * thing.count;
+			      }
+			      return total;
+			    }
+			  }
+			})
+		</script>-->
+
+	
+	<div class="test" id="test">
+		<table id="mytable">
+			
+				<div class="inter21">
+					<input type="checkBox"  @click="selectProduct(isSelectAll)" v-bind:checked="isSelectAll" />全选
+					<span class="s2" style="margin-left:120px;">商品名称</span><span class="s3" style="margin-left:340px;">单价</span>
+					<span class="count">数量</span><span class="total" style="margin-right:50px;">小计</span><span style="margin-right: 0px ;margin-left: 50px;">操作</span>
+				</div>
+			
+			<tr v-for="(item,index) in productList">
+				<td><input type="checkBox"   v-bind:checked="item.isSelect" @click="item.isSelect=!item.isSelect"/></td>
+				<td><img :src="item.images"></td>
+				<td>{{item.proName}}</td>
+				<td><span><a href="#" @click="item.proNum>0?item.proNum--:''">-</a></span><strong>{{item.proNum}}</strong><span><a href="#" @click="item.proNum++">+</a></span></td>
+				<td>{{item.proPrice}}</td>
+                <td>{{item.proNum}}</td>
+				<td>{{item.proPrice*item.proNum}}</td>
+				<td><a href="#" @click="deletePro(index)">删除</a></td>
+			</tr>
+		</table>
+		<div class="checkPro">
+			<div class="leftConent">
+				<span><a href="#" @click="deleteProduct">删除所选产品</a></span>
+			</div>
+			<div class="rightConent">
+				<span>{{getTotal.totalNum}}件商品总计：￥{{getTotal.totalPrice}}</span>
+				<a href="订单确认.html"><span>去结算</span></a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+    <div class="outer5">
+        <div class="inter1">
+            <div class="left">
+                <a href=""><img src="images/logo.png" alt=""></a>
+                <p>青竹良品原创生活类电商品牌，秉承一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到最优质的商品，全线采用天然原材料，控制甲醛低量无害，采用进口工艺，国际生产线不断优化，食材保证核心原产地新鲜直供，让你享受品质生活</p>
+            </div>
+            <div class="center">
+                <dl>
+                    <dt><a href="">关于我们</a></dt>
+                    <dd><a href="">我的品牌</a></dd>
+                    <dd><a href="">公司动态</a></dd>
+                    <dd><a href="">经历发展</a></dd>
+                    <dd><a href="">商品推广</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">支付方式</a></dt>
+                    <dd><a href="">微信支付</a></dd>
+                    <dd><a href="">支付宝</a></dd>
+                    <dd><a href="">百度钱包</a></dd>
+                    <dd><a href="">货到付款</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">相关服务</a></dt>
+                    <dd><a href="">退货政策</a></dd>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">客服服务</a></dd>
+                    <dd><a href="">商务合作</a></dd>
+                </dl>
+            </div>
+            <div class="right">
+                <img src="images/weixin.png" alt="">
+                <img src="images/weibo.png" alt="">
+                <span>微信公众号</span>
+                <span>微博公众号</span>
+            </div>
+        </div>
+        <hr>
+        <div class="inter2">
+
+        </div>
+    </div>
+ 
+  <!--  <script src="jqurey.js"></script>
+    <script src="购物车.js"></script>
+    <script src="shop.js"></script>-->
+</body>
+
+
+<script >
+	new Vue({
+		el : "#test",
+		data : {
+			productList:[
+				{   
+					'proName' :'经典系列红色时钟',
+					'proNum' : 0,
+					'proPrice' :580,
+					'images':'./images/s1.png',
+				},
+				{
+					'proName' :'便携简约清扫扫帚',
+					'proNum' : 0,
+					'proPrice' :580,
+					'images':'./images/s2.png',
+				},
+				{
+					'proName' :'黑色陶瓷研磨器皿 ',
+					'proNum' : 0,
+					'proPrice' :150,
+					'images':'./images/s3.png',
+				}
+			],
+		},
+		methods:{
+			selectProduct:function(_isSelect){
+                //遍历productList，全部取反
+                for (var i = 0, len = this.productList.length; i < len; i++) {
+                    this.productList[i].isSelect = !_isSelect;
+                }
+            },
+			deletePro : function(index){
+				alert("你正在删除"+this.productList[index].proName);
+				this.productList.splice(index,1);
+			},
+			//删除已经选中(isSelect=true)的产品
+            deleteProduct:function () {
+                this.productList=this.productList.filter(function (item) {return !item.isSelect})
+            },
+		},
+		computed:{
+			//检测是否全选
+            isSelectAll:function(){
+                //如果productList中每一条数据的isSelect都为true，返回true，否则返回false;
+                return this.productList.every(function (val) { return val.isSelect});
+            },
+			getTotal:function(){
+				var prolist = this.productList.filter(function (val) { return val.isSelect}),
+				totalPri = 0;
+				for (var i = 0,len = prolist.length; i < len; i++) {
+					totalPri+=prolist[i].proPrice*prolist[i].proNum;
+				}
+				return {totalNum:prolist.length,totalPrice:totalPri}
+			},
+		},
+		mounted:function () {
+        var _this=this;
+        //为productList添加select（是否选中）字段，初始值为true
+        this.productList.map(function (item) {
+            _this.$set(item, 'isSelect', true);
+        })
+    	}
+	})
+</script>
+
+</html>
